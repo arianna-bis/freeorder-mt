@@ -19,8 +19,9 @@ Each English sentence and its reverse are included in the test set together with
 
 The idea is to make it impossible for the MT model to rely on semantic and collocational cues to disambiguate the role of an argument during translation. Thus only syntactic cues like word order or inflection can be used.
 
-challenge-orig/ contains the original English-French sentences
-challenge-variants/ contains a number of English variants, namely:
+**challenge-orig/** contains the original English-French sentences\
+**challenge-variants/** contains a number of English variants, namely:
+
 * different (fixed) orders of main constituents (svo, sov, vso, vos)
 * random order of main constitutents (random)
 * shuffle all words (shuffle)
@@ -30,3 +31,5 @@ challenge-variants/ contains a number of English variants, namely:
   * na-d-f3: nominative/accusative deterministic (fusional/implicit suffixes with 3 declensions)
   * na-a: nominative/accusative ambiguous or syncretic (overt suffixes)
 * no case marking (none)
+
+For the random and shuffle conditions two versions obtained with different random seeds are provided (seed5, seed10).
